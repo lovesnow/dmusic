@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+body,ul,p,h1,h2,h3,h4,dl,dd,form,input,textarea,select { padding:0; margin:0; font-family:arial; }
+li { list-style:none; }
+img { border:none; }
+a { text-decoration:none; }
+
+body { font-size: 9px; color: #4D5154; }
+
+.logo_text, .blur_text { 
+	text-shadow: 1px 1px 5px #000; 
+	color: #fff;
+}	
+
+#dmusic {
+	background: url(background.jpg) no-repeat 0px -80px;
+	width: 896px;
+	height: 600px;
+	margin: 0 auto;
+	border:solid 1px #ffffff;	/* border-style: solid; border-width: 1px; border-color:#fff; */
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;	
+    -webkit-box-shadow:1px 1px 3px #5e656d, -1px -1px 3px #5e656d;
+    -moz-box-shadow:1px 1px 3px #5e656d, -1px -1px 3px #5e656d;
+    box-shadow:1px 1px 3px #5e656d, -1px -1px 3px #5e656d;	
+}
+
+.top_logo { float: left; }
+.top_logo li { float: left; }	
+.top_logo .logo_img { padding: 3px 0px 0px 5px; }
+.top_logo .logo_text { padding: 5px 0px 0px 5px; }
+
+.top_buttons { float: right; }
+.top_buttons li {float: left;}
+.top_buttons li a{float: left; background-repeat: no-repeat; width:26px; height: 22px;}
+
+.top_buttons .theme_button a:link{
+	background: url(./dodger_blue/image/button/window_theme_normal.png);
+}
+top_buttons .theme_button a:hover {
+	background: url(./dodger_blue/image/button/window_theme_hover.png);
+}
+top_buttons .theme_button a:active {
+	background: url(./dodger_blue/image/button/window_theme_active.png);
+}
+
+.top_buttons .menu_button a:link{
+	background: url(./dodger_blue/image/button/window_menu_normal.png);
+}
+top_buttons .menu_button a:hover {
+	background: url(./dodger_blue/image/button/window_menu_hover.png);
+}
+top_buttons .menu_button a:active {
+	background: url(./dodger_blue/image/button/window_menu_active.png);
+}
+
+.top_buttons .min_button a:link{
+	background: url(./dodger_blue/image/button/window_min_normal.png);
+}
+top_buttons .min_button a:hover {
+	background: url(./dodger_blue/image/button/window_min_hover.png);
+}
+top_buttons .min_button a:active {
+	background: url(./dodger_blue/image/button/window_min_active.png);
+}
+.top_buttons .close_button a:link{
+	background: url(./dodger_blue/image/button/window_close_normal.png);
+}
+top_buttons .close_button a:hover {
+	background: url(./dodger_blue/image/button/window_close_hover.png);
+}
+top_buttons .close_button a:active {
+	background: url(./dodger_blue/image/button/window_close_active.png);
+}
+
