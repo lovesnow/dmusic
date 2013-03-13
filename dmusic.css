@@ -13,7 +13,7 @@ body { font-size: 9px; color: #4D5154; }
 }	
 
 #dmusic {
-	background: url(background.jpg) no-repeat 0px -80px;
+	background: url(./dodger_blue/image/background.jpg) no-repeat 0px -80px;
 	width: 896px;
 	height: 600px;
 	margin: 0 auto;
