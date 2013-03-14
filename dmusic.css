@@ -25,51 +25,163 @@ body { font-size: 9px; color: #4D5154; }
     box-shadow:1px 1px 3px #5e656d, -1px -1px 3px #5e656d;	
 }
 
+#titlebar { height: 30px; }
 .top_logo { float: left; }
-.top_logo li { float: left; }	
+.top_logo li { float: left; }
 .top_logo .logo_img { padding: 3px 0px 0px 5px; }
 .top_logo .logo_text { padding: 5px 0px 0px 5px; }
 
 .top_buttons { float: right; }
 .top_buttons li {float: left;}
-.top_buttons li a{float: left; background-repeat: no-repeat; width:26px; height: 22px;}
+.top_buttons li a{float: left; display:block; background-repeat: no-repeat; width:26px; height: 22px;}
 
-.top_buttons .theme_button a:link{
+.top_buttons .theme_button a{
 	background: url(./dodger_blue/image/button/window_theme_normal.png);
 }
-top_buttons .theme_button a:hover {
+.top_buttons .theme_button a:hover {
 	background: url(./dodger_blue/image/button/window_theme_hover.png);
 }
-top_buttons .theme_button a:active {
-	background: url(./dodger_blue/image/button/window_theme_active.png);
+.top_buttons .theme_button a:active {
+	background: url(./dodger_blue/image/button/window_theme_press.png);
 }
 
-.top_buttons .menu_button a:link{
+.top_buttons .menu_button a{
 	background: url(./dodger_blue/image/button/window_menu_normal.png);
 }
-top_buttons .menu_button a:hover {
+.top_buttons .menu_button a:hover {
 	background: url(./dodger_blue/image/button/window_menu_hover.png);
 }
-top_buttons .menu_button a:active {
-	background: url(./dodger_blue/image/button/window_menu_active.png);
+.top_buttons .menu_button a:active {
+	background: url(./dodger_blue/image/button/window_menu_press.png);
 }
 
-.top_buttons .min_button a:link{
+.top_buttons .min_button a{
 	background: url(./dodger_blue/image/button/window_min_normal.png);
 }
-top_buttons .min_button a:hover {
+.top_buttons .min_button a:hover {
 	background: url(./dodger_blue/image/button/window_min_hover.png);
 }
-top_buttons .min_button a:active {
-	background: url(./dodger_blue/image/button/window_min_active.png);
+.top_buttons .min_button a:active {
+	background: url(./dodger_blue/image/button/window_min_press.png);
 }
-.top_buttons .close_button a:link{
+.top_buttons .close_button a{
 	background: url(./dodger_blue/image/button/window_close_normal.png);
 }
-top_buttons .close_button a:hover {
+.top_buttons .close_button a:hover {
 	background: url(./dodger_blue/image/button/window_close_hover.png);
 }
-top_buttons .close_button a:active {
-	background: url(./dodger_blue/image/button/window_close_active.png);
+.top_buttons .close_button a:active {
+	background: url(./dodger_blue/image/button/window_close_press.png);
+}
+
+#headbar {
+	height: 80px;
+	border: 1px solid green;
+	position: relative;
+}
+
+#headbar .cover_side {
+	background: url(./dodger_blue/image/cover/side.png) no-repeat;
+	margin:0 auto; 
+	width: 77px;
+	height: 78px;
+	float: left;
+	margin: 0px 0px 0px 10px;
+	/* border: 1px solid red; */
+}
+
+#headbar .artist_cover {
+	padding: 4px;
+	width: 69px;
+	height: 69px;
+	}
+
+#headbar .track_info {
+	position: relative;
+	left: 12px;
+}
+
+#headbar .track_timer {
+	position: relative;
+	top: 20px;
+	left: -60px;
+	/* z-index: 1; */
+}	
+
+.control_panel { 
+	/* border: 1px solid red; */
+	height: 50px;
+	width: 300px;
+	position: absolute;
+	top: 30px;
+	left: 92px;
+}
+
+/* .control_panel li { float: left;} */
+.control_panel li { display: inline-table; vertical-align:middle;}
+.control_panel li a { display: block;}
+.control_panel .lyrics_button a { 
+	background: url(./dodger_blue/image/lyrics_button/lyrics_active_normal.png);	
+	width: 27px;
+	height: 29px;
+	/* border: 1px solid red; */
+}
+.control_panel .lyrics_button a:hover {
+	background: url(./dodger_blue/image/lyrics_button/lyrics_active_hover.png);
+}
+.control_panel .lyrics_button a:active {
+	background: url(./dodger_blue/image/lyrics_button/lyrics_active_press.png);
+}
+
+.control_panel .prev_button a { 
+	background: url(./dodger_blue/image/action/previous_normal.png);	
+	width: 21px;
+	height: 29px;
+	/* border: 1px solid red; */
+}
+.control_panel .prev_button a:hover {
+	background: url(./dodger_blue/image/action/previous_hover.png);	
+}
+.control_panel .prev_button a:active {
+	background: url(./dodger_blue/image/action/previous_press.png);	
+}
+
+.control_panel .play_button a { 
+	background: url(./dodger_blue/image/action/play_normal.png);	
+	width: 49px;
+	height: 50px;
+	/* border: 1px solid red; */
+}
+.control_panel .play_button a:hover {
+	background: url(./dodger_blue/image/action/play_hover.png);	
+}
+.control_panel .play_button a:active {
+	background: url(./dodger_blue/image/action/play_press.png);	
+}
+
+.control_panel .next_button a { 
+	background: url(./dodger_blue/image/action/next_normal.png);	
+	width: 21px;
+	height: 29px;
+	/* border: 1px solid red; */
+}
+.control_panel .next_button a:hover {
+	background: url(./dodger_blue/image/action/next_hover.png);	
+}
+.control_panel .next_button a:active {
+	background: url(./dodger_blue/image/action/next_press.png);	
+}
+
+.control_panel .volume_button a { 
+	background: url(./dodger_blue/image/volume/high_normal.png);	
+	width: 21px;
+	height: 29px;
+	/* border: 1px solid red; */
+}
+.control_panel .volume_button a:hover {
+	background: url(./dodger_blue/image/volume/high_hover.png);	
+}
+.control_panel .volume_button a:active {
+	background: url(./dodger_blue/image/volume/high_press.png);	
 }
 
