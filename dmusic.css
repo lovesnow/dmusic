@@ -4,7 +4,7 @@ body,ul,p,h1,h2,h3,h4,dl,dd,form,input,textarea,select { padding:0; margin:0; fo
 li { list-style:none; }
 img { border:none; }
 a { text-decoration:none; }
-
+input {  outline:0; resize:none; }
 body { font-size: 9px; color: #4D5154; }
 
 .logo_text, .blur_text { 
@@ -76,7 +76,7 @@ body { font-size: 9px; color: #4D5154; }
 
 #headbar {
 	height: 80px;
-	border: 1px solid green;
+	/* border: 1px solid green; */
 	position: relative;
 }
 
@@ -87,7 +87,6 @@ body { font-size: 9px; color: #4D5154; }
 	height: 78px;
 	float: left;
 	margin: 0px 0px 0px 10px;
-	/* border: 1px solid red; */
 }
 
 #headbar .artist_cover {
@@ -109,7 +108,6 @@ body { font-size: 9px; color: #4D5154; }
 }	
 
 .control_panel { 
-	/* border: 1px solid red; */
 	height: 50px;
 	width: 300px;
 	position: absolute;
@@ -117,14 +115,12 @@ body { font-size: 9px; color: #4D5154; }
 	left: 92px;
 }
 
-/* .control_panel li { float: left;} */
 .control_panel li { display: inline-table; vertical-align:middle;}
 .control_panel li a { display: block;}
 .control_panel .lyrics_button a { 
 	background: url(./dodger_blue/image/lyrics_button/lyrics_active_normal.png);	
 	width: 27px;
 	height: 29px;
-	/* border: 1px solid red; */
 }
 .control_panel .lyrics_button a:hover {
 	background: url(./dodger_blue/image/lyrics_button/lyrics_active_hover.png);
@@ -137,7 +133,6 @@ body { font-size: 9px; color: #4D5154; }
 	background: url(./dodger_blue/image/action/previous_normal.png);	
 	width: 21px;
 	height: 29px;
-	/* border: 1px solid red; */
 }
 .control_panel .prev_button a:hover {
 	background: url(./dodger_blue/image/action/previous_hover.png);	
@@ -150,7 +145,6 @@ body { font-size: 9px; color: #4D5154; }
 	background: url(./dodger_blue/image/action/play_normal.png);	
 	width: 49px;
 	height: 50px;
-	/* border: 1px solid red; */
 }
 .control_panel .play_button a:hover {
 	background: url(./dodger_blue/image/action/play_hover.png);	
@@ -163,7 +157,6 @@ body { font-size: 9px; color: #4D5154; }
 	background: url(./dodger_blue/image/action/next_normal.png);	
 	width: 21px;
 	height: 29px;
-	/* border: 1px solid red; */
 }
 .control_panel .next_button a:hover {
 	background: url(./dodger_blue/image/action/next_hover.png);	
@@ -176,7 +169,6 @@ body { font-size: 9px; color: #4D5154; }
 	background: url(./dodger_blue/image/volume/high_normal.png);	
 	width: 21px;
 	height: 29px;
-	/* border: 1px solid red; */
 }
 .control_panel .volume_button a:hover {
 	background: url(./dodger_blue/image/volume/high_hover.png);	
@@ -185,3 +177,219 @@ body { font-size: 9px; color: #4D5154; }
 	background: url(./dodger_blue/image/volume/high_press.png);	
 }
 
+.progressbar {
+	display: block;
+	height: 8px;
+	background: url(./dodger_blue/image/scalebar/bg.png) repeat-x;	
+	position: relative;
+	top: 72px;
+}	
+
+.progressbar span {
+	height: 8px;
+	display: block;
+	background: -webkit-gradient(linear, left center, right center, from(#3B91D2), color-stop(70%, #60CDFE),  to(#60CDFE));	
+	/* background: #3B91D2; */
+	width: 80%;
+}	
+
+
+#content_container {
+	width: 896px;
+	height: 450px;
+	background: rgba(250,252,253,0.95);
+	margin-top: 15px;	
+	}
+
+#list_box {
+	width: 324px;
+	height: 450px;	
+	float:left;
+	/* background: rgba(250,252,253,0.95); */
+	position: relative;
+	/* border: 1px solid red; */
+}
+
+#list_box .list_notebook {
+	height: 31px;
+}
+
+#list_box .list_notebook li {
+	display: inline-block;
+	width: 49%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.list_notebook .notebook_active {
+	border-bottom-style: dashed; 
+	border-color: #d6d6d6;
+	border-width: 1px;
+	color: #5091D2;
+	font-size: 12px;
+}	
+
+.list_notebook .notebook_inactive {
+	background: #EAECED;	
+	border-bottom-style: solid; 
+	border-left-style: solid; 
+	border-color: #d6d6d6;
+	border-width: 1px;
+}	
+
+#list_box .playlist {
+	width: 105px;
+	height: 394px;
+	float: left;
+}
+
+#list_box .playlist li {
+	text-align: center;
+	line-height: 26px;
+	height: 26px;
+}
+
+.playlist .playlist_active {
+	background: #87BCDA;
+	color: #fff;
+}
+
+.playlist .playlist_inactive:hover {
+	background: #d7edf9;
+}	
+
+#list_box .list_content {
+	width: 215px;
+	height: 394px;
+	border-color: #d6d6d6;
+	border-style: none none none solid;
+	border-width: 1px;
+	float: right;
+}	
+
+#list_box .list_control {
+	height: 26px;
+	width: 322px;
+	border-top: 1px solid #d6d6d6;
+	position: absolute;
+	top: 424px;
+}
+
+.list_control li {
+	width: 60px;
+	height: 26px;
+	display: table-cell;	
+	vertical-align: middle;
+	padding-left: 20px;
+	}
+
+.list_control li a { 
+	line-height: 26px;
+	display: block; 
+	width: 14px; 
+	height: 12px; 
+}
+
+.list_control .list_search a {
+	background: url(./dodger_blue/image/toolbar/search_normal.png) no-repeat;
+}
+.list_control .list_search a:hover {
+	background: url(./dodger_blue/image/toolbar/search_hover.png);
+}
+.list_control .list_search a:active {
+	background: url(./dodger_blue/image/toolbar/search_press.png);
+}
+
+.list_control .list_operate a {
+	background: url(./dodger_blue/image/toolbar/list_normal.png);
+}
+.list_control .list_operate a:hover {
+	background: url(./dodger_blue/image/toolbar/list_hover.png);
+}
+.list_control .list_operate a:active {
+	background: url(./dodger_blue/image/toolbar/list_press.png);
+}
+
+.list_control .list_add a {
+	background: url(./dodger_blue/image/toolbar/add_normal.png);
+}
+.list_control .list_add a:hover {
+	background: url(./dodger_blue/image/toolbar/add_hover.png);
+}
+.list_control .list_add a:active {
+	background: url(./dodger_blue/image/toolbar/add_press.png);
+}
+
+.list_control .list_order a {
+	background: url(./dodger_blue/image/playmode/order_normal.png);
+}
+.list_control .list_order a:hover {
+	background: url(./dodger_blue/image/playmode/order_hover.png);
+}
+.list_control .list_order a:active {
+	background: url(./dodger_blue/image/playmode/order_press.png);
+}
+
+.list_control .list_delete a {
+	background: url(./dodger_blue/image/toolbar/delete_normal.png);
+}
+.list_control .list_delete a:hover {
+	background: url(./dodger_blue/image/toolbar/delete_hover.png);
+}
+.list_control .list_delete a:active {
+	background: url(./dodger_blue/image/toolbar/delete_press.png);
+}
+
+#browser_box {
+	width: 570px;
+	height: 450px;
+	float:right;
+	/* margin-top: 15px; */
+	/* background: rgba(250,252,253,0.95); */
+	/* margin-left: -20px; */
+	/* border-top: 1px solid #d6d6d6; */
+	border-left: 1px solid #d6d6d6;
+
+}
+
+#browser_box .global_search_bg, #browser_box .search_button_bg { display: table-cell;}
+
+#browser_box .global_search { 
+	border: none;
+	height: 30px;
+	width: 490px;
+	outline: none;
+	padding: 0;
+	/* border-left: 1px solid #d6d6d6; */
+	/* border-top: 1px solid #d6d6d6; */
+	border-bottom: 1px solid #d6d6d6;
+	border-right: 1px solid #d6d6d6;
+}
+
+#browser_box .search_button_bg {
+	width: 80px;
+	/* height: 20px; */
+	padding: 0;
+	background: url(./dodger_blue/image/search/bg.png) repeat-x;
+	border-bottom: 1px solid #d6d6d6;
+	}
+
+.search_button {
+	display: block;
+	width: 13px;
+	height: 16px;
+	position: relative;
+	/* top: 5px; */
+	left: 30px;
+	top: 5px;
+	background: url(./dodger_blue/image/search/search_normal.png) no-repeat;
+	}
+
+.search_button:hover {
+	background: url(./dodger_blue/image/search/search_hover.png) no-repeat;
+	}
+
+.search_button:active {
+	background: url(./dodger_blue/image/search/search_press.png) no-repeat;
+	}
